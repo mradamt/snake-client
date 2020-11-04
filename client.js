@@ -18,6 +18,14 @@ const connect = function() {
   conn.on('connect', (data) => {
     console.log('Successfully connected to gamey server');
     conn.write("Name: ART")
+    // conn.write("Move: left")
+    
+    // // setTimeout(x => conn.write("Move: left"), 1000)
+    // // setTimeout(x => conn.write("Move: up"), 3000)
+    // // setTimeout(x => conn.write("Move: right"), 5000)
+    // setInterval(() => {
+    //   conn.write("Move: up")
+    // }, 50);
   });
 
 
