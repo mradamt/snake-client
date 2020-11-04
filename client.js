@@ -17,13 +17,13 @@ const connect = function() {
 
   conn.on('connect', (data) => {
     console.log('Successfully connected to gamey server');
-    conn.write("Name: ART")
+    conn.write("Name: ART");
   });
 
 
 
   return conn;
-}
+};
 
 
 module.exports = {
