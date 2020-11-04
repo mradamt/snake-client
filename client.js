@@ -13,7 +13,14 @@ const connect = function() {
 
   conn.on('data', (data) => {
     console.log(data);
-  })
+  });
+
+  conn.on('connect', (data) => {
+    console.log('Successfully connected to gamey server');
+    conn.write("Name: ART")
+  });
+
+
 
   return conn;
 }
