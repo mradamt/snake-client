@@ -23,6 +23,10 @@ const handleUserInput = function(data) {
   if (data === 'j') connection.write("Move: left");
   if (data === 'k') connection.write("Move: down");
   if (data === 'l') connection.write("Move: right");
+  if (data === 'a') connection.write("Say: Ample legroom");
+  if (data === 's') connection.write("Say: Snakey McSnakeface");
+  if (data === 'd') connection.write("Say: *DANGER* noodle");
+  if (data === 'f') connection.write("Say: Fffffffridgemagnet");
 };
 
 
