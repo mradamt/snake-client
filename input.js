@@ -30,5 +30,5 @@ const handleUserInput = function(data) {
 };
 
 
-module.exports = { setupInput }
+module.exports = { setupInput };
 
