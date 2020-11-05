@@ -1,3 +1,5 @@
+const hotkeys = require('./constants').hotkeys;
+// const { , ,hotkeys, } = require('constants');
 let connection;
 
 /**
@@ -19,14 +21,7 @@ const setupInput = function(conn) {
 
 const handleUserInput = function(data) {
   if (data === '\u0003') process.exit();
-  if (data === 'i') connection.write("Move: up");
-  if (data === 'j') connection.write("Move: left");
-  if (data === 'k') connection.write("Move: down");
-  if (data === 'l') connection.write("Move: right");
-  if (data === 'a') connection.write("Say: Ample legroom");
-  if (data === 's') connection.write("Say: Snakey McSnakeface");
-  if (data === 'd') connection.write("Say: *DANGER* noodle");
-  if (data === 'f') connection.write("Say: Fffffffridgemagnet");
+  if (hotkeys[data]) connection.write(hotkeys[data]);
 };
 
 
